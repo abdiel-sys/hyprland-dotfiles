@@ -81,6 +81,7 @@ alias c='clear'
 alias ll='ls -ahl'
 
 export MANPAGER='nvim +Man!'
+export EDITOR=nvim
 # Shell integrations
 eval "$(fzf --zsh)"
 eval "$(zoxide init --cmd cd zsh)"
