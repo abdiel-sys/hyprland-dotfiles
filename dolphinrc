@@ -1,0 +1,22 @@
+MenuBar=Disabled
+
+[General]
+TerminalApplication=kitty
+Version=202
+ViewPropsTimestamp=2025,11,7,15,7,44.626
+
+[KFileDialog Settings]
+Places Icons Auto-resize=false
+Places Icons Static Size=22
+
+[MainWindow]
+MenuBar=Disabled
+
+[Icons]
+Theme=Papirus-Dark
+
+[Colors:View]
+BackgroundNormal=#00000000
+
+[UiSettings]
+ColorScheme=*
