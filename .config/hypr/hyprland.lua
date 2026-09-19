@@ -23,12 +23,12 @@ local menu = "fuzzel"
 -- Or execute your favorite apps at launch like this:
 --
 hl.on("hyprland.start", function()
-  hl.exec_cmd("waybar & hyprpaper & hypridle")
-  hl.exec_cmd("blueman-applet & kdeconnect-indicator & nm-applet")
-  hl.exec_cmd("wl-paste --type text --watch cliphist store")
-  hl.exec_cmd("wl-paste --type image --watch cliphist store")
-  hl.exec_cmd("dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP")
-  hl.exec_cmd("systemctl --user start hyprpolkitagent")
+	hl.exec_cmd("waybar & hyprpaper & hypridle & hyprsunset")
+	hl.exec_cmd("blueman-applet & kdeconnect-indicator & nm-applet")
+	hl.exec_cmd("wl-paste --type text --watch cliphist store")
+	hl.exec_cmd("wl-paste --type image --watch cliphist store")
+	hl.exec_cmd("dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP")
+	hl.exec_cmd("systemctl --user start hyprpolkitagent")
 end)
 
 -- ENVIROMENT VARIABLES
@@ -50,52 +50,52 @@ hl.env("XCURSOR_THEME", "BreezeX-Dark")
 hl.env("XCURSOR_SIZE", "24")
 
 hl.config({
-  general = {
-    gaps_in = 2,
-    gaps_out = 5,
+	general = {
+		gaps_in = 2,
+		gaps_out = 5,
 
-    border_size = 2,
+		border_size = 2,
 
-    col = {
-      active_border = { colors = { "rgba(33ccffee)", "rgba(00ff99ee)" }, angle = 45 },
-      inactive_border = "rgba(595959aa)",
-    },
+		col = {
+			active_border = { colors = { "rgba(33ccffee)", "rgba(00ff99ee)" }, angle = 45 },
+			inactive_border = "rgba(595959aa)",
+		},
 
-    -- Set to true to enable resizing windows by clicking and dragging on borders and gaps
-    resize_on_border = false,
+		-- Set to true to enable resizing windows by clicking and dragging on borders and gaps
+		resize_on_border = false,
 
-    -- Please see https://wiki.hypr.land/Configuring/Advanced-and-Cool/Tearing/ before you turn this on
-    allow_tearing = false,
+		-- Please see https://wiki.hypr.land/Configuring/Advanced-and-Cool/Tearing/ before you turn this on
+		allow_tearing = false,
 
-    layout = "scrolling",
-  },
+		layout = "scrolling",
+	},
 
-  decoration = {
-    rounding = 10,
-    rounding_power = 2,
+	decoration = {
+		rounding = 10,
+		rounding_power = 2,
 
-    -- Change transparency of focused and unfocused windows
-    active_opacity = 1.0,
-    inactive_opacity = 1.0,
+		-- Change transparency of focused and unfocused windows
+		active_opacity = 1.0,
+		inactive_opacity = 1.0,
 
-    shadow = {
-      enabled = true,
-      range = 4,
-      render_power = 3,
-      color = 0xee1a1a1a,
-    },
+		shadow = {
+			enabled = true,
+			range = 4,
+			render_power = 3,
+			color = 0xee1a1a1a,
+		},
 
-    blur = {
-      enabled = true,
-      size = 3,
-      passes = 1,
-      vibrancy = 0.1696,
-    },
-  },
+		blur = {
+			enabled = true,
+			size = 3,
+			passes = 1,
+			vibrancy = 0.1696,
+		},
+	},
 
-  animations = {
-    enabled = true,
-  },
+	animations = {
+		enabled = true,
+	},
 })
 
 -- Default curves and animations, see https://wiki.hypr.land/Configuring/Advanced-and-Cool/Animations/
@@ -127,43 +127,43 @@ hl.animation({ leaf = "workspacesOut", enabled = true, speed = 1.94, bezier = "a
 hl.animation({ leaf = "zoomFactor", enabled = true, speed = 7, bezier = "quick" })
 
 hl.window_rule({
-  name = "browser",
-  match = { class = "librewolf" },
-  scrolling_width = 0.75,
+	name = "browser",
+	match = { class = "librewolf" },
+	scrolling_width = 0.75,
 })
 
 hl.window_rule({
-  name = "KeePassXC Unlocking",
-  match = { initial_title = "Unlock Database - KeePassXC" },
-  float = true,
-  center = true,
+	name = "KeePassXC Unlocking",
+	match = { initial_title = "Unlock Database - KeePassXC" },
+	float = true,
+	center = true,
 })
 hl.window_rule({
-  name = "kdeconnect sending",
-  match = { class = "org.kde.kdeconnect.daemon" },
-  float = true,
-  center = true,
+	name = "kdeconnect sending",
+	match = { class = "org.kde.kdeconnect.daemon" },
+	float = true,
+	center = true,
 })
 -- See https://wiki.hypr.land/Configuring/Layouts/Dwindle-Layout/ for more
 hl.config({
-  dwindle = {
-    preserve_split = true, -- You probably want this
-  },
+	dwindle = {
+		preserve_split = true, -- You probably want this
+	},
 })
 
 -- See https://wiki.hypr.land/Configuring/Layouts/Master-Layout/ for more
 hl.config({
-  master = {
-    new_status = "master",
-  },
+	master = {
+		new_status = "master",
+	},
 })
 
 -- See https://wiki.hypr.land/Configuring/Layouts/Scrolling-Layout/ for more
 hl.config({
-  scrolling = {
-    fullscreen_on_one_column = true,
-    column_width = 0.5,
-  },
+	scrolling = {
+		fullscreen_on_one_column = true,
+		column_width = 0.5,
+	},
 })
 
 ----------------
@@ -171,10 +171,10 @@ hl.config({
 ----------------
 
 hl.config({
-  misc = {
-    force_default_wallpaper = -1, -- Set to 0 or 1 to disable the anime mascot wallpapers
-    disable_hyprland_logo = false, -- If true disables the random hyprland logo / anime girl background. :(
-  },
+	misc = {
+		force_default_wallpaper = -1, -- Set to 0 or 1 to disable the anime mascot wallpapers
+		disable_hyprland_logo = false, -- If true disables the random hyprland logo / anime girl background. :(
+	},
 })
 
 ---------------
@@ -183,16 +183,16 @@ hl.config({
 require("input")
 
 hl.gesture({
-  fingers = 3,
-  direction = "horizontal",
-  action = "workspace",
+	fingers = 3,
+	direction = "horizontal",
+	action = "workspace",
 })
 
 -- Example per-device config
 -- See https://wiki.hypr.land/Configuring/Advanced-and-Cool/Devices/ for more
 hl.device({
-  name = "epic-mouse-v1",
-  sensitivity = -0.5,
+	name = "epic-mouse-v1",
+	sensitivity = -0.5,
 })
 
 ---------------------
@@ -226,9 +226,9 @@ hl.bind(mainMod .. " + J", hl.dsp.focus({ direction = "down" }))
 -- Switch workspaces with mainMod + [0-9]
 -- Move active window to a workspace with mainMod + SHIFT + [0-9]
 for i = 1, 10 do
-  local key = i % 10 -- 10 maps to key 0
-  hl.bind(mainMod .. " + " .. key, hl.dsp.focus({ workspace = i }))
-  hl.bind(mainMod .. " + SHIFT + " .. key, hl.dsp.window.move({ workspace = i }))
+	local key = i % 10 -- 10 maps to key 0
+	hl.bind(mainMod .. " + " .. key, hl.dsp.focus({ workspace = i }))
+	hl.bind(mainMod .. " + SHIFT + " .. key, hl.dsp.window.move({ workspace = i }))
 end
 
 -- Example special workspace (scratchpad)
@@ -247,24 +247,24 @@ hl.bind(mainMod .. " + mouse:273", hl.dsp.window.resize(), { mouse = true })
 
 -- Laptop multimedia keys for volume and LCD brightness
 hl.bind(
-  "XF86AudioRaiseVolume",
-  hl.dsp.exec_cmd("wpctl set-volume -l 1 @DEFAULT_AUDIO_SINK@ 5%+"),
-  { locked = true, repeating = true }
+	"XF86AudioRaiseVolume",
+	hl.dsp.exec_cmd("wpctl set-volume -l 1 @DEFAULT_AUDIO_SINK@ 5%+"),
+	{ locked = true, repeating = true }
 )
 hl.bind(
-  "XF86AudioLowerVolume",
-  hl.dsp.exec_cmd("wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-"),
-  { locked = true, repeating = true }
+	"XF86AudioLowerVolume",
+	hl.dsp.exec_cmd("wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-"),
+	{ locked = true, repeating = true }
 )
 hl.bind(
-  "XF86AudioMute",
-  hl.dsp.exec_cmd("wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"),
-  { locked = true, repeating = true }
+	"XF86AudioMute",
+	hl.dsp.exec_cmd("wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"),
+	{ locked = true, repeating = true }
 )
 hl.bind(
-  "XF86AudioMicMute",
-  hl.dsp.exec_cmd("wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle"),
-  { locked = true, repeating = true }
+	"XF86AudioMicMute",
+	hl.dsp.exec_cmd("wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle"),
+	{ locked = true, repeating = true }
 )
 
 hl.bind("XF86MonBrightnessUp", hl.dsp.exec_cmd("brightnessctl -e4 -n2 set 5%+"), { locked = true, repeating = true })
@@ -292,34 +292,34 @@ hl.bind(mainMod .. " + Print", hl.dsp.exec_cmd("grim /home/bold/Pictures/Screens
 --------------------------------
 
 local suppressMaximizeRule = hl.window_rule({
-  -- Ignore maximize requests from all apps. You'll probably like this.
-  name = "suppress-maximize-events",
-  match = { class = ".*" },
+	-- Ignore maximize requests from all apps. You'll probably like this.
+	name = "suppress-maximize-events",
+	match = { class = ".*" },
 
-  suppress_event = "maximize",
+	suppress_event = "maximize",
 })
 -- suppressMaximizeRule:set_enabled(false)
 
 hl.window_rule({
-  -- Fix some dragging issues with XWayland
-  name = "fix-xwayland-drags",
-  match = {
-    class = "^$",
-    title = "^$",
-    xwayland = true,
-    float = true,
-    fullscreen = false,
-    pin = false,
-  },
+	-- Fix some dragging issues with XWayland
+	name = "fix-xwayland-drags",
+	match = {
+		class = "^$",
+		title = "^$",
+		xwayland = true,
+		float = true,
+		fullscreen = false,
+		pin = false,
+	},
 
-  no_focus = true,
+	no_focus = true,
 })
 
 -- Hyprland-run windowrule
 hl.window_rule({
-  name = "move-hyprland-run",
-  match = { class = "hyprland-run" },
+	name = "move-hyprland-run",
+	match = { class = "hyprland-run" },
 
-  move = "20 monitor_h-120",
-  float = true,
+	move = "20 monitor_h-120",
+	float = true,
 })
