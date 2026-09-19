@@ -9,14 +9,6 @@ Ensure to have this installed on your system
 
 - Git
 - Stow
-- dunst
-- nvim
-- ttf-jetbrains-mono-nerd
-- kitty
-- waybar
-- ohmyposh
-- fuzzel
-- dolphin
 
 ## Installation
 
@@ -31,5 +23,4 @@ Then use GNU stow to create the symlinks
 
 ```zsh
 stow .
-
 ```
