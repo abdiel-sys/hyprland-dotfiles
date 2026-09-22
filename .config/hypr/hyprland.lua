@@ -236,7 +236,7 @@ hl.bind(mainMod .. " + S", hl.dsp.workspace.toggle_special("magic"))
 hl.bind(mainMod .. " + SHIFT + S", hl.dsp.window.move({ workspace = "special:magic" }))
 
 -- Lock
-hl.bind(mainMod .. " + ALT + L", hl.dsp.exec_cmd("hyprlock"))
+hl.bind("CTRL + ALT + L", hl.dsp.exec_cmd("hyprlock"))
 -- Scroll through existing workspaces with mainMod + scroll
 hl.bind(mainMod .. " + mouse_down", hl.dsp.focus({ workspace = "e+1" }))
 hl.bind(mainMod .. " + mouse_up", hl.dsp.focus({ workspace = "e-1" }))
