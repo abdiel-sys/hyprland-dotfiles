@@ -1,3 +1,12 @@
 [Default Applications]
 image/jpeg=imv-dir.desktop
 image/png=imv-dir.desktop
+text/html=librewolf.desktop
+application/json=librewolf.desktop
+application/pdf=librewolf.desktop
+application/x-xpinstall=librewolf.desktop
+application/xhtml+xml=librewolf.desktop
+text/html=librewolf.desktop
+text/xml=librewolf.desktop
+x-scheme-handler/http=librewolf.desktop
+x-scheme-handler/https=librewolf.desktop
