@@ -3,6 +3,11 @@ use = "Deepak22903/kdeconnect-send"
 rev = "06674d1"
 hash = "869884767c2ef592bfb7f5764f8fcae3"
 
+[[plugin.deps]]
+use = "yazi-rs/plugins:mount"
+rev = "f703392"
+hash = "b95f898e6dc60b52edbc415952e14395"
+
 [[flavor.deps]]
 use = "bennyyip/gruvbox-dark"
 rev = "619fdc5"
