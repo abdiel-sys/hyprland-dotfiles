@@ -1,10 +1,10 @@
 {
   "layer": "top",
   "position": "top",
-  "margin-top": 10,
+  "margin-top": 5,
   "margin-right": 5,
   "margin-left": 5,
-  "height": 50,
+  "height": 30,
   "modules-left": [
     "custom/files",
     "custom/now-playing",
