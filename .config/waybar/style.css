@@ -1,8 +1,7 @@
 #waybar {
-    background-color: rgba(40, 40, 40, 0.70);
+    background-color: rgba(40, 40, 40, 0.90);
     color: #ffffff;
-    border-radius: 50px;       /* Rounded corners */
-    
+    border-radius: 0px;       /* Rounded corners */
 }
 #custom-files {
   color: #ccac56;
