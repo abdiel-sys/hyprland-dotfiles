@@ -1,6 +1,6 @@
 #!/bin/bash
 
-opt=$(echo -e "Hyprland Config\nNotebook\nTmux Javascript\nTmux Config Folder" | fuzzel -d)
+opt=$(echo -e "Hyprland Config\nNotebook\nTmux Javascript\nTmux Config Folder" | noctalia dmenu -p "Pick")
 
 case $opt in
 Hyprland\ Config) kitty -- nvim ~/.config/hypr ;;
