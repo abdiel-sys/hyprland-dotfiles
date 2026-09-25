@@ -1,0 +1,14 @@
+
+
+[theme]
+community_palette = "Gruvbox Material"
+mode = "dark"
+source = "community"
+wallpaper_scheme = "m3-content"
+
+[theme.templates]
+
+enable_builtin_templates = true
+enable_community_templates = true
+builtin_ids = ["kitty", "gtk3", "gtk4", "qt", "kcolorscheme"]
+community_ids = ["telegram", "zathura", "bat", "Kitty"]

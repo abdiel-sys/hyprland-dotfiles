@@ -1,0 +1,10 @@
+[storage]
+key_source = "secret-service" # secret-service | file
+key_file = ""                 # absolute path; required only when key_source = "file"
+
+[shell]
+corner_radius_scale = 0
+font_family = "JetBrainsMonoNerdFont"
+
+[shell.panel]
+borders = false
