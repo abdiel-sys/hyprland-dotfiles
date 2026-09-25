@@ -22,7 +22,7 @@ local fileManager = "kitty -e yazi"
 -- Or execute your favorite apps at launch like this:
 --
 hl.on("hyprland.start", function()
-	hl.exec_cmd("noctalia & hypridle")
+	hl.exec_cmd("noctalia")
 	hl.exec_cmd("kdeconnect-indicator")
 	hl.exec_cmd("dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP")
 	hl.exec_cmd("systemctl --user start hyprpolkitagent")
@@ -270,8 +270,8 @@ hl.bind(mainMod .. " + period", hl.dsp.layout("colresize +0.25"))
 hl.bind(mainMod .. " + comma", hl.dsp.layout("colresize -0.25"))
 
 --Screenshot
-hl.bind("Print", hl.dsp.exec_cmd('grim -g "$(slurp)" - | swappy -f -'))
-hl.bind(mainMod .. " + Print", hl.dsp.exec_cmd("grim /home/bold/Pictures/Screenshots/" .. os.time() .. "_grim.png"))
+hl.bind("Print", hl.dsp.exec_cmd(ipc .. "screenshot-region"))
+hl.bind(mainMod .. " + Print", hl.dsp.exec_cmd(ipc .. "screenshot-fullscreen"))
 --------------------------------
 ---- WINDOWS AND WORKSPACES ----
 --------------------------------
