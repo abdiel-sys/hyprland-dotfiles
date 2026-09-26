@@ -1,3 +1,18 @@
 [bar.default]
 radius = 0
 margin_ends = 0
+center = ["clock", "media"]
+end = [
+  "tray",
+  "notifications",
+  "clipboard",
+  "network",
+  "bluetooth",
+  "volume",
+  "battery",
+  "ram",
+  "session",
+]
+scale = 1.3
+start = ["wallpaper", "control-center", "workspaces"]
+widget_spacing = 16

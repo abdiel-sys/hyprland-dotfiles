@@ -1,0 +1,11 @@
+[wallpaper]
+directory = "/home/bold/walls"
+
+[wallpaper.default]
+path = "/home/bold/walls/gruvbox-hair-blowing.png"
+
+[wallpaper.last]
+path = "/home/bold/walls/gruvbox-hair-blowing.png"
+
+[wallpaper.monitors.eDP-1]
+path = "/home/bold/walls/gruvbox-hair-blowing.png"

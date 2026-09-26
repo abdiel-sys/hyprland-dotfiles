@@ -3,8 +3,16 @@ key_source = "secret-service" # secret-service | file
 key_file = ""                 # absolute path; required only when key_source = "file"
 
 [shell]
+app_icon_colorize = true
 corner_radius_scale = 0
-font_family = "JetBrainsMonoNerdFont"
+font_family = "JetBrainsMono NF"
+
+[shell.launcher]
+app_grid = true
+categories = false
+
+[shell.screenshot]
+directory = "/home/bold/Pictures/Screenshots"
 
 [shell.panel]
 borders = false

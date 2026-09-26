@@ -1,4 +1,5 @@
-
+[accessibility]
+ui_scale = 1.1000000089406967
 
 [theme]
 community_palette = "Gruvbox Material"
@@ -7,8 +8,23 @@ source = "community"
 wallpaper_scheme = "m3-content"
 
 [theme.templates]
-
 enable_builtin_templates = true
 enable_community_templates = true
-builtin_ids = ["kitty", "gtk3", "gtk4", "qt", "kcolorscheme"]
-community_ids = ["telegram", "zathura", "bat", "Kitty"]
+builtin_ids = [
+  "btop",
+  "gtk3",
+  "gtk4",
+  "hyprland",
+  "kcolorscheme",
+  "kitty",
+  "qt",
+]
+community_ids = [
+  "telegram",
+  "neovim",
+  "fastfetch",
+  "zathura",
+  "bat",
+  "tmux",
+  "yazi",
+]
