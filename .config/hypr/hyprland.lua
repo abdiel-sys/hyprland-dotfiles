@@ -276,11 +276,11 @@ hl.bind(mainMod .. " + Print", hl.dsp.exec_cmd(ipc .. "screenshot-fullscreen"))
 ---- WINDOWS AND WORKSPACES ----
 --------------------------------
 
-hl.workspace_rule({ workspace = "1", monitor = "DP-1", persistent = true, default_name = "web" })
-hl.workspace_rule({ workspace = "2", monitor = "DP-1", persistent = true, default_name = "code" })
-hl.workspace_rule({ workspace = "3", monitor = "DP-1", persistent = true, default_name = "chat" })
-hl.workspace_rule({ workspace = "4", monitor = "DP-1", persistent = true, default_name = "game" })
-hl.workspace_rule({ workspace = "5", monitor = "DP-1", persistent = true, default_name = "design" })
+-- hl.workspace_rule({ workspace = "1", monitor = "DP-1", persistent = true, default_name = "web" })
+-- hl.workspace_rule({ workspace = "2", monitor = "DP-1", persistent = true, default_name = "code" })
+-- hl.workspace_rule({ workspace = "3", monitor = "DP-1", persistent = true, default_name = "chat" })
+-- hl.workspace_rule({ workspace = "4", monitor = "DP-1", persistent = true, default_name = "game" })
+-- hl.workspace_rule({ workspace = "5", monitor = "DP-1", persistent = true, default_name = "design" })
 
 local suppressMaximizeRule = hl.window_rule({
 	-- Ignore maximize requests from all apps. You'll probably like this.
