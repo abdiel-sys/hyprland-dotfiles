@@ -6,3 +6,7 @@
 .config/yazi/flavors/noctalia.yazi/
 .config/zathura/noctaliarc
 .config/hypr/noctalia.lua
+
+# Generated via nwg-displays
+.config/hypr/monitors.conf
+.config/hypr/monitors.lua

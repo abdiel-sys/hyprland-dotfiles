@@ -140,6 +140,21 @@ hl.window_rule({
 	float = true,
 	center = true,
 })
+
+hl.window_rule({
+	match = { initial_title = "Image Editor" },
+	float = true,
+	size = { 1280, 920 },
+	center = true,
+})
+
+hl.window_rule({
+	match = { initial_title = "File Browser" },
+	float = true,
+	size = { 1280, 920 },
+	center = true,
+})
+
 -- See https://wiki.hypr.land/Configuring/Layouts/Dwindle-Layout/ for more
 hl.config({
 	dwindle = {
