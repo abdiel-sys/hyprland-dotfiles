@@ -31,6 +31,44 @@ hl.window_rule({
 	center = true,
 })
 
+hl.window_rule({
+	match = { class = "zoom" },
+	float = true,
+})
+
+hl.window_rule({
+	match = { initial_title = "Meeting" },
+	float = false,
+})
+
+hl.window_rule({
+	match = { class = "hyprland-share-picker" },
+	float = true,
+})
+-- hl.window_rule({
+-- 	match = { initial_title = "as_preview" },
+-- 	float = true,
+-- })
+--
+-- hl.window_rule({
+-- 	match = { initial_title = "zoom_linux_float_video_window" },
+-- 	float = true,
+-- })
+--
+-- hl.window_rule({
+-- 	match = { initial_title = "as_toolbar" },
+-- 	float = true,
+-- })
+--
+-- hl.window_rule({
+-- 	match = { initial_title = "annotate_toolbar" },
+-- 	float = true,
+-- })
+--
+-- hl.window_rule({
+-- 	match = { initial_title = "Annotation - Zoom" },
+-- 	float = true,
+-- })
 -- Defaults
 
 hl.window_rule({
