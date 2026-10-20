@@ -45,6 +45,12 @@ hl.window_rule({
 	match = { class = "hyprland-share-picker" },
 	float = true,
 })
+
+hl.window_rule({
+	match = { initial_title = "Picture-in-Picture" },
+	float = true,
+	pin = true,
+})
 -- hl.window_rule({
 -- 	match = { initial_title = "as_preview" },
 -- 	float = true,
